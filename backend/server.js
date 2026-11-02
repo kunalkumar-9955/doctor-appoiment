@@ -119,6 +119,15 @@ app.get('/api/health', (req, res) => {
   });
 });
 
+app.get('/', (req, res) => {
+  res.json({
+    success: true,
+    message: 'MediConnect AI Server is running',
+    version: '1.0.0',
+    health: '/api/health'
+  });
+});
+
 // 404 handler
 app.use((req, res) => {
   res.status(404).json({ success: false, message: `Route ${req.originalUrl} not found` });
