@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
-import { AlertTriangle, MapPin, Ambulance, PhoneCall, Clock, Navigation, Search } from 'lucide-react'
+import { AlertTriangle, MapPin, Siren as Ambulance, PhoneCall, Clock, Navigation, Search } from 'lucide-react'
 
 export default function Emergency() {
   const [bookingState, setBookingState] = useState('idle')
